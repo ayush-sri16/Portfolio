@@ -654,14 +654,14 @@ textarea{
         display: none;
       }
       header {
-        height: 150vh;
+        height: 170vh;
       }
       #main a {
         height: fit-content;
         font-size: 25px;
       }
       #about_me {
-        height: 138vh;
+        height: 155vh;
       }
       #about_me p {
         width: 100%;
@@ -708,7 +708,7 @@ textarea{
         font-size: 56px;
       }
       .send-btn{
-        /* width: 187px; */
+        width: 187px;
         font-size: 27px;
       }
       .icon{
