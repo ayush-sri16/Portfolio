@@ -51,7 +51,7 @@ ul {
 
 ul li {
   font-size: 18px;
-  color: #deb887;
+  color: #c58d43;
   list-style: none;
   padding-top: 17px;
 }
@@ -60,7 +60,7 @@ nav li a {
 }
 nav li a:hover {
   text-shadow: 2x 2px 2px #000;
-  color: #deb887;
+  color: #c58d43;
   text-decoration: none;
 }
 
@@ -75,10 +75,6 @@ nav li a:hover {
 #main > div h1 {
   font-size: 2.2em;
 }
-/* 
-#backk {
-  background-color: rgb(81, 21, 21);
-} */
 
 #main h2 {
   color: #fff;
@@ -96,6 +92,7 @@ nav li a:hover {
 }
 
 #main button {
+    margin-right: 7px;
   margin-top: 20px;
   padding: 9px 12px;
   background-color: #3a6cf4;
@@ -103,6 +100,10 @@ nav li a:hover {
   border-style: none;
   border-radius: 10px;
   font-weight: 600;
+  transition: 0.4s;
+}
+#main button:hover{
+    background-color: #c58d43;
 }
 
 #main button a {
@@ -365,6 +366,11 @@ hr {
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
+  transition: 0.7s;
+}
+.project_info > strong a:hover{
+    background-color: #0a1f5b;
+    
 }
 
 .project_info > strong p {
@@ -460,10 +466,12 @@ textarea {
   border-radius: 30px;
   display: block;
   margin: 16px auto 10px auto;
+  transition: 0.3s;
 }
 
 .send-btn:hover {
-  background-color: rgb(177, 177, 177);
+  background-color: #514c46;
+  color: aliceblue;
 }
 
 .footer {
