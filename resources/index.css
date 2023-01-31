@@ -3,24 +3,27 @@ html {
 }
 
 * {
-  /* overflow: hidden; */
   margin: 0px;
   padding: 0px;
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(BEZzLr.jpeg);
   max-height: fit-content;
   max-width: 100%;
   background-position: inherit;
   background-size: cover;
-  padding-bottom: 50px;
+  display: flex;
+  height: 93vh;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .logo {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   color: #0c2a7b;
   padding-left: 31px;
   font-family: fangsong;
@@ -32,16 +35,30 @@ header {
 
 nav {
   background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 ul li {
-  font-size: 27px;
+  font-size: 18px;
+  color: #deb887;
+  list-style: none;
+  padding-top: 17px;
 }
-
-#nav li a {
+nav li a {
+  color: #000;
+}
+nav li a:hover {
+  text-shadow: 2x 2px 2px #000;
+  color: #deb887;
   text-decoration: none;
-  color: #3a6cf4;
-  font-weight: 500;
 }
 
 #main {
@@ -55,10 +72,10 @@ ul li {
 #main > div h1 {
   font-size: 2.2em;
 }
-
-#main > div {
-  margin-top: 150px;
-}
+/* 
+#backk {
+  background-color: rgb(81, 21, 21);
+} */
 
 #main h2 {
   color: #fff;
@@ -77,9 +94,9 @@ ul li {
 
 #main button {
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 9px 12px;
   background-color: #3a6cf4;
-  font-size: 28px;
+  font-size: 1.2rem;
   border-style: none;
   border-radius: 10px;
   font-weight: 600;
@@ -101,8 +118,9 @@ ul li {
   padding-right: 30px;
 }
 
-#main > div > div {
+#main div > div {
   display: flex;
+  margin-top: 25px;
   justify-content: space-between;
 }
 
@@ -124,11 +142,11 @@ ul li {
   font-weight: 900;
   color: rgb(255, 255, 255);
   font-family: "Bebas Neue", cursive;
-  /* border-top: 7px solid rgb(255 255 255); */
   padding-bottom: 35px;
 }
 
 #about_me {
+  height: 60vh;
   padding-top: 1px;
   background-color: rgba(209, 209, 209, 0.892);
 }
@@ -145,7 +163,7 @@ ul li {
 }
 
 #about_me img {
-  max-height: 363px;
+  max-height: 333px;
   border-radius: 6px;
 }
 
@@ -157,15 +175,13 @@ ul li {
 }
 
 #about_me p {
-  font-size: 18px;
+  /* font-size: 18px; */
   width: 60%;
-  padding: 20px;
-  text-align: justify;
-  margin: 0px 13px;
+  padding: 18px;
   font-family: "Comfortaa", cursive;
-  line-height: 24px;
-  word-spacing: 6px;
-  letter-spacing: 1px;
+  line-height: 22px;
+  word-spacing: 5px;
+  /* letter-spacing: 1px; */
 }
 
 hr {
@@ -173,9 +189,7 @@ hr {
 }
 
 #my_Skill {
-  /* padding-bottom: 3em; */
   height: 60vh;
-  /* padding-top: 10px; */
   background-color: #000016;
   display: flex;
   align-items: flex-start;
@@ -187,11 +201,6 @@ hr {
 #white_background {
   width: 100%;
   background-color: #000016;
-  /* border-radius: 0 200px 200px 0; */
-}
-
-#my_Skill > div {
-  /* margin-top: 60px; */
 }
 
 #my_Skill img {
@@ -204,10 +213,6 @@ hr {
   justify-content: center;
 }
 
-.framework {
-  /* margin-top: 6%; */
-}
-
 .whole {
   min-width: 0px;
   text-align: center;
@@ -215,7 +220,6 @@ hr {
 
 .card {
   width: 5em;
-  /* padding: 17px 15px; */
   box-shadow: rgb(8 0 215 / 46%) 2px 3px 21px;
   border-radius: 10px;
   transition: 0.5s ease;
@@ -244,24 +248,10 @@ hr {
 .card:hover {
   transform: scale(1.2);
 }
-/* 
-.card h3 {
-    text-align: center;
-    font-size: 1.3rem;
-} */
-
 .icon {
   font-size: 53px;
-  /* text-align: center; */
   color: #4e9eff;
 }
-
-/* .info>p {
-    text-align: justify;
-    font-size: 17px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #777;
-} */
 
 /* Animation */
 
@@ -318,23 +308,13 @@ hr {
 }
 
 .myProject {
-  /* width: 100vh; */
-  height: 70vh;
-  margin: 0;
-  padding: 1px 15rem;
+  width: 60vw;
+  margin: auto;
   font-family: "arial", heletica, sans-serif;
   font-size: 12px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  /* display: grid; */
-  /* margin: 15px; */
-  /* -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr); */
 }
 
 #projects h2 {
@@ -352,7 +332,7 @@ hr {
 .project_card {
   background-color: aliceblue;
   max-width: max-content;
-  margin: 21px;
+  margin: 14px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -542,7 +522,7 @@ textarea {
 
 /* media queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 280px) and (max-width: 375px){
   body {
     width: fit-content;
   }
@@ -551,22 +531,192 @@ textarea {
   }
   #main img {
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 48px;
+  }
+  #main button{
+      font-size: 2rem;
   }
   .last_sec div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
-  .form_items h5 {
-    font-size: 30px;
+  .last_sec{
+      height: 147vh;
   }
-  .quote > div h4 {
-    font-size: 1em;
-  }
-  #nav {
+  
+  
+  nav {
     display: none;
   }
+  header {
+    height: 196vh;
+  }
+  #main a {
+    height: fit-content;
+  }
+  #about_me {
+    height: 170vh;
+  }
   #about_me p {
-    width: 94%;
-    line-height: 20px;
+    width: 100%;
+    padding: 42px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  #scroll_skill {
+    font-size: 3.3rem;
+  }
+  .myProject {
+    width: 100%;
+  }
+  .project_card > div img {
+    height: 18rem;
+  }
+  .project_info > p {
+    font-size: 2.1em;
+  }
+  .project_info > strong p {
+    font-size: 20px;
+  }
+  .project_info > strong a{
+      font-size: 27px;
+  }
+  .quote > div{
+width: 80%;
+  }
+  .quote > div h4 {
+    font-size: 1.5em;
+  }
+  .quote > div span > em {
+      font-size: 21px;
+  }
+  input,
+textarea{
+    height: 10vh;
+    font-size: 23px;
+}
+.form_items h5 {
+    font-size: 53px;
+  }
+  .send-btn{
+      width: 173px;
+      font-size: 22px;
+  }
+  .icon{
+      font-size: 70px;
+  }
+  small{
+      font-size: 26px;
+  }
+  .social_links a {
+      font-size: 3rem;
   }
 }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (min-width: 376px) and (max-width: 415px){
+    body {
+        width: fit-content;
+      }
+      #typing{
+          font-size: 40px;
+      }
+      #main > div {
+        margin-top: 50px;
+      }
+      #main img {
+        margin-top: 20px;
+        margin-right: 60px;
+      }
+      .last_sec div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .last_sec{
+          height: 130vh;
+      }
+      
+      
+      nav {
+        display: none;
+      }
+      header {
+        height: 150vh;
+      }
+      #main a {
+        height: fit-content;
+        font-size: 25px;
+      }
+      #about_me {
+        height: 138vh;
+      }
+      #about_me p {
+        width: 100%;
+        padding: 42px;
+        font-size: 29px;
+        line-height: 35px;
+      }
+      #my_Skills{
+          height: 70vh;
+      }
+      #scroll_skill {
+        font-size: 3.3rem;
+      }
+      .myProject {
+        width: 100%;
+      }
+      .project_card > div img {
+        height: 18rem;
+      }
+      .project_info > p {
+        font-size: 2.1em;
+      }
+      .project_info > strong p {
+        font-size: 20px;
+      }
+      .project_info > strong a{
+          font-size: 27px;
+      }
+      .quote > div{
+    width: 80%;
+      }
+      .quote > div h4 {
+        font-size: 1.5em;
+      }
+      .quote > div span > em {
+          font-size: 21px;
+      }
+      input,
+    textarea{
+        height: 10vh;
+        font-size: 23px;
+    }
+    .form_items h5 {
+        font-size: 56px;
+      }
+      .send-btn{
+        width: 187px;
+        font-size: 27px;
+      }
+      .icon{
+          font-size: 70px;
+      }
+      small{
+          font-size: 26px;
+      }
+      .social_links a {
+          font-size: 3rem;
+      }
+    }
+    
+
