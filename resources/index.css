@@ -1,7 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+    width: 100vw;
 
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -308,7 +311,7 @@ hr {
 }
 
 .myProject {
-  width: 60vw;
+  width: 80vw;
   margin: auto;
   font-family: "arial", heletica, sans-serif;
   font-size: 12px;
@@ -365,12 +368,12 @@ hr {
 }
 
 .project_info > strong p {
-  font-size: 10px;
+  font-size: 13px;
   color: gray;
 }
 
 .project_info > p {
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 700;
   font-family: monospace;
 }
@@ -531,7 +534,7 @@ textarea {
   }
   #main img {
     margin-top: 20px;
-    margin-right: 48px;
+    margin-right: 45px;
   }
   #main button{
       font-size: 2rem;
@@ -705,7 +708,7 @@ textarea{
         font-size: 56px;
       }
       .send-btn{
-        width: 187px;
+        /* width: 187px; */
         font-size: 27px;
       }
       .icon{
