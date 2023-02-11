@@ -339,6 +339,12 @@ hr {
   margin: 14px;
   overflow: hidden;
   border-radius: 12px;
+  transition: 0.5s;
+}
+.project_card:hover{
+  background-color: #01003c;
+  color: white;
+  transform: scale(1.09);
 }
 
 .project_card > div img {
