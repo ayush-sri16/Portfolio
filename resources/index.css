@@ -1,0 +1,739 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(BEZzLr.jpeg);
+  max-height: fit-content;
+  max-width: 100%;
+  background-position: inherit;
+  background-size: cover;
+  display: flex;
+  height: 93vh;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 3.3rem;
+  color: #0c2a7b;
+  padding-left: 31px;
+  font-family: fangsong;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li {
+  font-size: 18px;
+  color: #c58d43;
+  list-style: none;
+  padding-top: 17px;
+}
+nav li a {
+  color: #000;
+}
+nav li a:hover {
+  text-shadow: 2x 2px 2px #000;
+  color: #c58d43;
+  text-decoration: none;
+}
+
+#main {
+  margin: auto;
+  padding-bottom: 30px;
+  max-width: 85%;
+  color: aliceblue;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#main > div h1 {
+  font-size: 2.2em;
+}
+
+#main h2 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.frontEnd {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  color: #4e9eff;
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+#main button {
+    margin-right: 7px;
+  margin-top: 20px;
+  padding: 9px 12px;
+  background-color: #3a6cf4;
+  font-size: 1.2rem;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+#main button:hover{
+    background-color: #c58d43;
+}
+
+#main button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.social_media {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.social_media i {
+  color: #fff;
+  font-size: 1.9em;
+  padding-right: 30px;
+}
+
+#main div > div {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+#main img {
+  filter: saturate(1.5);
+  margin-top: -74px;
+  height: 344px;
+  border-radius: 50%;
+  z-index: 0;
+  max-height: 320px;
+}
+
+#scroll_Skill {
+  width: fit-content;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  padding-bottom: 35px;
+}
+
+#about_me {
+  height: 60vh;
+  padding-top: 1px;
+  background-color: rgba(209, 209, 209, 0.892);
+}
+
+#scroll_About {
+  width: fit-content;
+  margin: 20px auto 0px auto;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #0c2a7b;
+  font-family: "Bebas Neue", cursive;
+  border-top: 10px solid #0c2a7b;
+}
+
+#about_me img {
+  max-height: 333px;
+  border-radius: 6px;
+}
+
+#about_me div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about_me p {
+  /* font-size: 18px; */
+  width: 60%;
+  padding: 18px;
+  font-family: "Comfortaa", cursive;
+  line-height: 22px;
+  word-spacing: 5px;
+  /* letter-spacing: 1px; */
+}
+
+hr {
+  margin: 0px;
+}
+
+#my_Skill {
+  height: 60vh;
+  background-color: #000016;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#white_background {
+  width: 100%;
+  background-color: #000016;
+}
+
+#my_Skill img {
+  height: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.whole {
+  min-width: 0px;
+  text-align: center;
+}
+
+.card {
+  width: 5em;
+  box-shadow: rgb(8 0 215 / 46%) 2px 3px 21px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  background-color: black;
+  margin: 6px;
+}
+#js {
+  color: #ffd600;
+}
+#react {
+  color: #61dbfb;
+}
+#html5 {
+  color: #e34c26;
+}
+#css3 {
+  color: #264de4;
+}
+#bootstrap {
+  color: #563d7c;
+}
+#git {
+  color: #f34f29;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+.icon {
+  font-size: 53px;
+  color: #4e9eff;
+}
+
+/* Animation */
+
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-moz-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-ms-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@-o-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+#projects {
+  background: #0a3b5c
+    url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png")
+    repeat 0 0;
+  animation: 10s linear 0s normal none infinite animate;
+  padding: 40px 0px 55px 0px;
+}
+
+.myProject {
+  width: 80vw;
+  margin: auto;
+  font-family: "arial", heletica, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects h2 {
+  text-align: center;
+  width: fit-content;
+  margin: 6px auto 40px auto;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  color: aliceblue;
+  font-family: "Bebas Neue", cursive;
+  border-top: 10px solid aliceblue;
+}
+
+.project_card {
+  background-color: aliceblue;
+  max-width: max-content;
+  margin: 14px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.project_card:hover{
+  background-color: #01003c;
+  color: white;
+  transform: scale(1.09);
+}
+
+.project_card > div img {
+  height: 10rem;
+}
+
+.project_info {
+  padding: 13px;
+}
+
+.project_info > strong {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.project_info > strong a {
+  text-decoration: none;
+  background-color: #3a6cf4;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s;
+}
+.project_info > strong a:hover{
+    background-color: #0a1f5b;
+    
+}
+
+.project_info > strong p {
+  font-size: 13px;
+  color: gray;
+}
+
+.project_info > p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.quote {
+  height: 11vh;
+}
+
+.quote > div {
+  background-color: rgb(209, 209, 209);
+  height: 164px;
+  width: 53%;
+  margin: 74px auto 0px auto;
+  border-radius: 30px;
+  padding-top: 14px;
+  position: relative;
+  z-index: 5;
+}
+
+.quote > div h4 {
+  font-size: 26px;
+  margin-left: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quote > div span > em {
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.last_sec {
+  background-color: #000016;
+  z-index: 3;
+  position: relative;
+  padding: 100px;
+  padding-bottom: inherit;
+  margin-bottom: -16px;
+}
+
+.last_sec div {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form_items h5 {
+  padding-top: 24px;
+  width: fit-content;
+  margin: auto;
+  font-size: 2.9em;
+  color: rgb(209, 232, 252);
+  border-bottom: 10px solid rgb(209, 233, 252);
+  font-family: "Bebas Neue", cursive;
+}
+
+form {
+  margin: 16px 0px;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+
+.send-btn {
+  background-color: #edf2f4;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px;
+  width: 97px;
+  border: none;
+  border-radius: 30px;
+  display: block;
+  margin: 16px auto 10px auto;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #514c46;
+  color: aliceblue;
+}
+
+.footer {
+  position: sticky;
+  top: 100vh;
+}
+
+.footer_container {
+  background-color: #3a6cf4;
+  padding: 40px 40px 10px 40px;
+  margin-top: -16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer_items h2 {
+  text-align: center;
+  color: #2b2d42;
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+.footer_items hr {
+  background-color: #2b2d42;
+  margin: 0px 0px 10px 0px;
+  border-radius: 5px;
+  border: none;
+  padding: 2px;
+}
+
+.social_links {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social_links a {
+  color: #fff;
+  font-size: 1.9em;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.copyright_section {
+  text-align: center;
+  color: #edf2f4;
+  background-color: #000016;
+  padding: 10px 0px 10px 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+#live {
+  color: #00b700;
+  text-shadow: 1px 1px 3px #06ff1e;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 280px) and (max-width: 375px){
+  body {
+    width: fit-content;
+  }
+  #main > div {
+    margin-top: 50px;
+  }
+  #main img {
+    margin-top: 20px;
+    margin-right: 45px;
+  }
+  #main button{
+      font-size: 2rem;
+  }
+  .last_sec div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .last_sec{
+      height: 147vh;
+  }
+  
+  
+  nav {
+    display: none;
+  }
+  header {
+    height: 196vh;
+  }
+  #main a {
+    height: fit-content;
+  }
+  #about_me {
+    height: 170vh;
+  }
+  #about_me p {
+    width: 100%;
+    padding: 42px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  #scroll_skill {
+    font-size: 3.3rem;
+  }
+  .myProject {
+    width: 100%;
+  }
+  .project_card > div img {
+    height: 18rem;
+  }
+  .project_info > p {
+    font-size: 2.1em;
+  }
+  .project_info > strong p {
+    font-size: 20px;
+  }
+  .project_info > strong a{
+      font-size: 27px;
+  }
+  .quote > div{
+width: 80%;
+  }
+  .quote > div h4 {
+    font-size: 1.5em;
+  }
+  .quote > div span > em {
+      font-size: 21px;
+  }
+  input,
+textarea{
+    height: 10vh;
+    font-size: 23px;
+}
+.form_items h5 {
+    font-size: 53px;
+  }
+  .send-btn{
+      width: 173px;
+      font-size: 22px;
+  }
+  .icon{
+      font-size: 70px;
+  }
+  small{
+      font-size: 26px;
+  }
+  .social_links a {
+      font-size: 3rem;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (min-width: 376px) and (max-width: 415px){
+    body {
+        width: fit-content;
+      }
+      #typing{
+          font-size: 40px;
+      }
+      #main > div {
+        margin-top: 50px;
+      }
+      #main img {
+        margin-top: 20px;
+        margin-right: 60px;
+      }
+      .last_sec div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .last_sec{
+          height: 130vh;
+      }
+      
+      
+      nav {
+        display: none;
+      }
+      header {
+        height: 170vh;
+      }
+      #main a {
+        height: fit-content;
+        font-size: 25px;
+      }
+      #about_me {
+        height: 155vh;
+      }
+      #about_me p {
+        width: 100%;
+        padding: 42px;
+        font-size: 29px;
+        line-height: 35px;
+      }
+      #my_Skills{
+          height: 70vh;
+      }
+      #scroll_skill {
+        font-size: 3.3rem;
+      }
+      .myProject {
+        width: 100%;
+      }
+      .project_card > div img {
+        height: 18rem;
+      }
+      .project_info > p {
+        font-size: 2.1em;
+      }
+      .project_info > strong p {
+        font-size: 20px;
+      }
+      .project_info > strong a{
+          font-size: 27px;
+      }
+      .quote > div{
+    width: 80%;
+      }
+      .quote > div h4 {
+        font-size: 1.5em;
+      }
+      .quote > div span > em {
+          font-size: 21px;
+      }
+      input,
+    textarea{
+        height: 10vh;
+        font-size: 23px;
+    }
+    .form_items h5 {
+        font-size: 56px;
+      }
+      .send-btn{
+        width: 187px;
+        font-size: 27px;
+      }
+      .icon{
+          font-size: 70px;
+      }
+      small{
+          font-size: 26px;
+      }
+      .social_links a {
+          font-size: 3rem;
+      }
+    }
+    
+
